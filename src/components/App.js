@@ -4,6 +4,7 @@ import Display from './display';
 import Header from './header';
 import GameInput from './gameInput';
 import NewGame from './newGame';
+import Count from './count';
 
 class App extends Component {
   render() {
@@ -13,6 +14,7 @@ class App extends Component {
       <GameInput />
       <Display />
       <NewGame />
+      <Count />
       </React.Fragment>
     );
   }

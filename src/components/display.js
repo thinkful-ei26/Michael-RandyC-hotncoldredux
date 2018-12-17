@@ -3,6 +3,13 @@ import {connect} from 'react-redux';
 
 export function Display(props) {
     const checkGuess = function guessChecker() {
+
+        if(props.guess === props.answer){
+
+            return 'You got it!!'
+
+        }
+
         const diff = Math.abs(Number(props.guess) - Number(props.answer));
         console.log(props.answer);       
         if(diff <= 50 && diff > 40){
@@ -20,6 +27,7 @@ export function Display(props) {
         if(diff <= 10 && diff > 0){
             return 'Very hot';
         }
+        
         return 'way way off';
     }
     
