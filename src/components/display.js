@@ -28,13 +28,16 @@ export function Display(props) {
             return 'Very hot';
         }
         
-        return 'way way off';
+        return 'Make a guess';
     }
     
     const displayMessage = checkGuess();  
 
     
-    return <span>{displayMessage}</span>
+    return <React.Fragment >
+        <span>{displayMessage}</span>
+        <br></br>
+        </React.Fragment>
 }
 
 export const mapStateToProps = state => ({

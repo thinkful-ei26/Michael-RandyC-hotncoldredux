@@ -12,6 +12,7 @@ export function GameInput(props) {
     return <form onSubmit={onSubmit}>
     <label>Input guess:</label>
     <input type="number" name="guess"  />
+    <button type="submit">Guess</button>
     </form>
 }
 

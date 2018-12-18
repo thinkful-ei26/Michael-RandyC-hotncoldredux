@@ -4,7 +4,10 @@ import {connect} from 'react-redux';
 
 export function NewGame(props) {
 
-    return <button onClick = {() => props.dispatch(setAnswer())}>New Game</button>
+    return <React.Fragment >
+        <button onClick = {() => props.dispatch(setAnswer())}>New Game</button>
+        <br></br>
+        </React.Fragment>
     
 }
 
