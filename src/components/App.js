@@ -13,8 +13,8 @@ class App extends Component {
       <Header />
       <GameInput />
       <Display />
-      <NewGame />
       <Count />
+      <NewGame />
       </React.Fragment>
     );
   }

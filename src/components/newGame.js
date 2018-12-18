@@ -1,13 +1,11 @@
 import React from 'react';
 import {setAnswer} from '../actions/actions';
 import {connect} from 'react-redux';
+import './newGame.css';
 
 export function NewGame(props) {
 
-    return <React.Fragment >
-        <button onClick = {() => props.dispatch(setAnswer())}>New Game</button>
-        <br></br>
-        </React.Fragment>
+    return <button className='newGame' onClick = {() => props.dispatch(setAnswer())}>New Game</button>
     
 }
 

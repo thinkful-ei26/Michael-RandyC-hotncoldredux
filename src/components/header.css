@@ -1,0 +1,14 @@
+.header{
+    font-size: 30px;
+    color: blue;
+    background-color: white;
+    padding:3px;
+    border-radius: 5px;
+}
+.headerBackground{
+    padding:10px;
+    background-color: orange;
+    text-align: center;
+    margin: 10px;
+    border-radius:10px;
+}

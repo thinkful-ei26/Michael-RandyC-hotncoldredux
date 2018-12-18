@@ -1,5 +1,6 @@
 import React from 'react';
 import {connect} from 'react-redux';
+import './display.css'; 
 
 export function Display(props) {
     const checkGuess = function guessChecker() {
@@ -7,7 +8,6 @@ export function Display(props) {
         if(props.guess === props.answer){
 
             return 'You got it!!'
-
         }
 
         const diff = Math.abs(Number(props.guess) - Number(props.answer));
@@ -35,8 +35,10 @@ export function Display(props) {
 
     
     return <React.Fragment >
-        <span>{displayMessage}</span>
+        <div className='displayMessage'>
+        <span className='display'>{displayMessage}</span>
         <br></br>
+        </div>
         </React.Fragment>
 }
 
