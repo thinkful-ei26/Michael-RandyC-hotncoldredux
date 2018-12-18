@@ -10,11 +10,10 @@ export function Count(props) {
   })
 
   return <React.Fragment>
-    <div className='countBackground'>
+    
       <span className='count'>Guesses so far: { currentCount } </span>
       <br></br>
       <ul className='listGuesses'>{listGuesses}</ul>
-      </div>
     </React.Fragment>
 
 }

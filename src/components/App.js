@@ -12,9 +12,13 @@ class App extends Component {
       <React.Fragment>
       <Header />
       <GameInput />
+      <div className='endBackground'>
       <Display />
+      <br></br>
       <Count />
+      <br></br>
       <NewGame />
+      </div>
       </React.Fragment>
     );
   }

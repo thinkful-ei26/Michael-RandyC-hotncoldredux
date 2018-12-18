@@ -35,10 +35,8 @@ export function Display(props) {
 
     
     return <React.Fragment >
-        <div className='displayMessage'>
         <span className='display'>{displayMessage}</span>
         <br></br>
-        </div>
         </React.Fragment>
 }
 
